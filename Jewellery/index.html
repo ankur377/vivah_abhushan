@@ -144,7 +144,7 @@
 
 
     <div class="do-wrapper">
-        <header style="height:160px;">
+        <header>
             <div class="do-header-top">
                 <div class="container">
                     <div class="do-top-right float-right">
@@ -398,7 +398,7 @@
                     <div class="container">
                         <!-- <button id="menu_toggle" class="navbar-toggler mr-auto" type="button"> <i
                                 class="ion ion-android-menu"></i> </button> -->
-                        <a href="#" class="do-mobile-logo"> <img src="./logos/2D.svg" alt="vivah Abhushan"> </a>
+                        <a href="#" class="do-mobile-logo"> <img src="./logos/vivahlogo.png" alt="vivah Abhushan"> </a>
 
 
 
@@ -406,7 +406,7 @@
                         <div class="do-main-menu collapse navbar-collapse" id="main_menu">
                             <ul class="navbar-nav">
                                 <li class="nav-item do-brand-logo do-brand-icon"><a class="navbar-brand text-primary"
-                                        href="#"><img src="./logos/2D.svg" title="vivah Abhushan" alt="vivah Abhushan"
+                                        href="#"><img src="./logos/vivahlogo.png" title="vivah Abhushan" alt="vivah Abhushan"
                                             class="do-logo-icon"></a>
                                 </li>
 
@@ -422,7 +422,7 @@
                                 </li>
 
                                 <li class="nav-item do-brand-logo do-brand-text"> <a class="navbar-brand text-primary"
-                                        href="#"> <img src="./logos/2D.svg" title="vivah Abhushan" alt="vivah Abhushan"
+                                        href="#"> <img src="./logos/vivahlogo.png" title="vivah Abhushan" alt="vivah Abhushan"
                                             class="do-with-text"></a> </li>
                                 <li class="nav-item ml-auto">
                                 </li>
@@ -529,7 +529,7 @@
             }
         </style>
 
-        <style>
+        <!-- <style>
             .figcaption {
     position: absolute;
     bottom: 0;
@@ -576,8 +576,143 @@ figure {
     display: block;
 }
 
-        </style>
+        </style> -->
 
+         <style>
+        figure {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            background: #fff;
+            border-radius: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid #f0f0f0;
+        }
+
+        figure:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+        figure > div:first-child {
+            position: relative;
+            overflow: hidden;
+            background: #fafafa;
+        }
+
+        figure img {
+            width: 100%;
+            /* height: 300px; */
+            object-fit: cover;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        figure:hover img {
+            transform: scale(1.02);
+        }
+
+        .figcaption {
+            padding: 10px;
+            background: #fff;
+            text-align: center;
+            position: static;
+            width: auto;
+            color: inherit;
+        }
+
+        .figcaption h5 {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            line-height: 1.4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .oi-btns-hldr {
+            margin-top: 15px;
+        }
+
+        .oi-btns-hldr a {
+            display: inline-block;
+            background: transparent;
+            color: #8B4513;
+            border: 2px solid #8B4513;
+            padding: 10px 25px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border-radius: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .oi-btns-hldr a:hover {
+            background: #8B4513;
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        /* Elegant divider line above button */
+        .oi-btns-hldr::before {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 1px;
+            background: #d4af37;
+            margin: 0 auto 15px auto;
+        }
+
+        /* Category badge */
+        /* figure > div:first-child::before {
+            content: 'New Collection';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(139, 69, 19, 0.9);
+            color: white;
+            padding: 5px 12px;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 2;
+            border-radius: 0;
+        } */
+
+        /* Wishlist heart - subtle and elegant */
+        /* figure > div:first-child::after {
+            content: '♡';
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 20px;
+            color: rgba(139, 69, 19, 0.7);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 2;
+        } */
+
+        /* Premium border effect on hover */
+        figure:hover {
+            border-color: #d4af37;
+        }
+
+        /* Clean typography */
+        .text-uppercase {
+            text-transform: none;
+        }
+
+        .vivahimg {
+            height: 450px;
+        }
+    </style>
         <script>
             $('.cl-sub-menu-head').click(function (e) {
                 e.preventDefault();
@@ -630,7 +765,7 @@ figure {
                                 <div class="figcaption">
                                     <h5 class="text-uppercase">Diamond Long</h5>
                                     <div class="oi-btns-hldr">
-                                        <a href="index.html" class="btn btn-lg btn-outline-white">Take a look</a>
+                                        <a href="index.html" class="btn btn-lg">Take a look</a>
                                     </div>
                                 </div class="figcaption">
                             </figure>
@@ -642,7 +777,7 @@ figure {
                                 <div class="figcaption">
                                     <h5 class="text-uppercase">Diamond Choker</h5>
                                     <div class="oi-btns-hldr">
-                                        <a href="index.html" class="btn btn-lg btn-outline-white">Take a look</a>
+                                        <a href="index.html" class="btn btn-lg ">Take a look</a>
                                     </div>
                                 </div class="figcaption">
                             </figure>
@@ -654,7 +789,7 @@ figure {
                                 <div class="figcaption">
                                     <h5 class="text-uppercase">Full Bridal Premium</h5>
                                     <div class="oi-btns-hldr">
-                                        <a href="index.html" class="btn btn-lg btn-outline-white">Take a
+                                        <a href="index.html" class="btn btn-lg">Take a
                                             look</a>
                                     </div>
                                 </div class="figcaption">
@@ -667,7 +802,7 @@ figure {
                                 <div class="figcaption">
                                     <h5 class="text-uppercase">Full Bridal Regular</h5>
                                     <div class="oi-btns-hldr">
-                                        <a href="index.html" class="btn btn-lg btn-outline-white">Take a
+                                        <a href="index.html" class="btn btn-lg">Take a
                                             look</a>
                                     </div>
                                 </div class="figcaption">
@@ -679,7 +814,7 @@ figure {
                                 <div class="figcaption">
                                     <h5 class="text-uppercase">Semi Bridal</h5>
                                     <div class="oi-btns-hldr">
-                                        <a href="index.html" class="btn btn-lg btn-outline-white">Take a
+                                        <a href="index.html" class="btn btn-lg">Take a
                                             look</a>
                                     </div>
                                 </div class="figcaption">
@@ -692,7 +827,7 @@ figure {
                                 <div class="figcaption">
                                     <h5 class="text-uppercase">Rajwadi Choker</h5>
                                     <div class="oi-btns-hldr">
-                                        <a href="index.html" class="btn btn-lg btn-outline-white">Take a look</a>
+                                        <a href="index.html" class="btn btn-lg">Take a look</a>
                                     </div>
                                 </div class="figcaption">
                             </figure>
@@ -703,7 +838,7 @@ figure {
                                 <div class="figcaption">
                                     <h5 class="text-uppercase">Rajwadi Long</h5>
                                     <div class="oi-btns-hldr">
-                                        <a href="index.html" class="btn btn-lg btn-outline-white">Take a
+                                        <a href="index.html" class="btn btn-lg">Take a
                                             look</a>
                                     </div>
                                 </div class="figcaption">
@@ -716,7 +851,7 @@ figure {
                                 <div class="figcaption">
                                     <h5 class="text-uppercase">Rajwadi Necklace</h5>
                                     <div class="oi-btns-hldr">
-                                        <a href="index.html" class="btn btn-lg btn-outline-white">Take a
+                                        <a href="index.html" class="btn btn-lg">Take a
                                             look</a>
                                     </div>
                                 </div class="figcaption">
