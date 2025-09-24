@@ -316,7 +316,7 @@ select:focus {
 }
 
 .do-main-menu .navbar-nav .do-brand-logo img.do-with-text {
-  height: 130px;
+  height: 100px;
   width: 150px;
   margin-bottom: -10px;
   padding: 15px;
@@ -941,7 +941,7 @@ header.do-sticky .do-main-menu .navbar-nav .do-brand-logo.do-brand-icon {
 
 header.do-sticky .do-main-menu .navbar-nav .do-brand-logo.do-brand-icon img.do-logo-icon {
   height: 50px;
-  width: 35px;
+  width: 80px;
   opacity: 1;
   -webkit-transition: .5s;
   -moz-transition: .5s;
@@ -1452,10 +1452,10 @@ section {
   padding: 0
 }
 
-section.bordered {
+/* section.bordered {
   border-top: 1px solid red;
   padding-top: 20px
-}
+} */
 
 section.curved {
   padding-top: 40px
@@ -1522,7 +1522,7 @@ h1.do-heading {
   padding-bottom: 60px
 }
 
-.do-heading h1::after,
+/* .do-heading h1::after,
 .do-heading h2.h1::after {
   content: '';
   position: absolute;
@@ -1537,7 +1537,7 @@ h1.do-heading {
   background: url("https://www.kalyanjewellers.net/images/devider.svg") no-repeat 0px center;
   background-size: 100%;
   z-index: 1
-}
+} */
 
 .do-heading img {
   height: 140px
@@ -6257,7 +6257,7 @@ h2.do-subheading::after {
 
   nav.navbar .do-mobile-logo {
     display: block;
-    margin: 0 auto
+    /* margin: 0 auto */
   }
 
   nav.navbar .do-mobile-logo img {
