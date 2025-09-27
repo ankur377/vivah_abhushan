@@ -1602,7 +1602,7 @@ h1.do-heading {
   padding-bottom: 15px
 }
 
-.do-lined h1:before,
+/* .do-lined h1:before,
 .do-lined .h1:before {
   content: '';
   position: absolute;
@@ -1611,7 +1611,7 @@ h1.do-heading {
   width: 1px;
   height: 80px;
   border-right: 1px solid #000
-}
+} */
 
 .do-lined h2 {
   position: relative;
